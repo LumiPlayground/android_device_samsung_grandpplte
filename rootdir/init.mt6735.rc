@@ -1,8 +1,8 @@
 # MTK platform .rc configure
 
-import init.project.rc
-import init.mt6735.usb.rc
-import init.wifi.rc
+import /vendor/etc/init/hw/init.project.rc
+import /vendor/etc/init/hw/init.mt6735.usb.rc
+import /vendor/etc/init/hw/init.wifi.rc
 
 # init.modem.rc must be the LAST rc file because vold.post_fs_data_done is set in it
 import init.modem.rc
