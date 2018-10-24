@@ -68,8 +68,6 @@ on init
 # mount different fs start
 
 on fs
-    # Start HW service manager early
-    start hwservicemanager
     mount_all /vendor/etc/fstab.mt6735 --early
 
 on late-fs
