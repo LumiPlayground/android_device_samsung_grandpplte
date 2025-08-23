@@ -66,6 +66,7 @@ TARGET_BOARD_PLATFORM := mt6737t
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.mt6735
 
 # inherit from the proprietary version
 -include vendor/samsung/grandpplte/BoardConfigVendor.mk
