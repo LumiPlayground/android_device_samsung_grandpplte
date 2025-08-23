@@ -31,6 +31,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/audio_policy.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy.conf
 
+# Camera
+PRODUCT_PACKAGES += \
+	Snap
+
 # Display
 PRODUCT_PACKAGES += \
     libion
