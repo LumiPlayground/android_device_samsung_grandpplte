@@ -39,6 +39,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libion
 
+# FM
+PRODUCT_PACKAGES += \
+	libfmjni \
+	FMRadio
+
 # Media/OMX
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_codecs_google_audio.xml \
