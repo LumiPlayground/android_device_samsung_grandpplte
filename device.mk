@@ -72,5 +72,21 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.sip.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/handheld_core_hardware.xml
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    fstab.mt6735 \
+    init.carrier.rc \
+    init.mal.rc \
+    init.modem.rc \
+    init.mt6735.rc \
+    init.mt6735.usb.rc \
+    init.project.rc \
+    init.recovery.mt6735.rc \
+    init.rilchip.rc \
+    init.rilcommon.rc \
+    init.volte.rc \
+    init.wifi.rc \
+    ueventd.mt6735.rc
+
 # Vendor blobs
 $(call inherit-product, vendor/samsung/grandpplte/grandpplte-vendor.mk)
