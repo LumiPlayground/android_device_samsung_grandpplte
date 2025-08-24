@@ -13,6 +13,9 @@ on early-init
     chmod 0755 /sys/kernel/debug
     chown system system /sys/kernel/debug
 
+    # RIL
+    chmod 644 /proc/cmdline
+
 on init
     # Support legacy paths
     symlink /sdcard /mnt/sdcard
