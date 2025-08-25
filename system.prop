@@ -1,3 +1,7 @@
+# Camera
+media.stagefright.legacyencoder=true
+media.stagefright.less-secure=true
+
 # Density
 ro.sf.lcd_density=240
 
