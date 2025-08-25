@@ -44,6 +44,13 @@ PRODUCT_PACKAGES += \
 	libfmjni \
 	FMRadio
 
+# Keylayout
+KEYLAYOUTS := \
+	$(DEVICE_PATH)/configs/sec_touchscreen.kl
+
+PRODUCT_COPY_FILES += \
+	$(foreach f,$(KEYLAYOUTS),$(f):system/usr/keylayout/$(notdir $(f)))
+
 # Media/OMX
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_codecs_google_audio.xml \
