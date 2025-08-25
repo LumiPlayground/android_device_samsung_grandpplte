@@ -22,3 +22,5 @@ ro.telephony.default_network=9
 wifi.interface=wlan0
 wifi.tethering.interface=ap0
 wifi.direct.interface=p2p0
+
+persist.sys.strictmode.disable=1
