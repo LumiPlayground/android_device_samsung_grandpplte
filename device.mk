@@ -75,8 +75,6 @@ PRODUCT_COPY_FILES += \
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6735 \
-    init.carrier.rc \
-    init.mal.rc \
     init.modem.rc \
     init.mt6735.rc \
     init.mt6735.usb.rc \
@@ -84,7 +82,6 @@ PRODUCT_PACKAGES += \
     init.recovery.mt6735.rc \
     init.rilchip.rc \
     init.rilcommon.rc \
-    init.volte.rc \
     init.wifi.rc \
     ueventd.mt6735.rc
 
