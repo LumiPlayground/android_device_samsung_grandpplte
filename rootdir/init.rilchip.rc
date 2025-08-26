@@ -11,6 +11,7 @@ service ril-daemon /system/bin/rild
     socket rild-cas stream 660  casdrm mmb
     user root
     group radio cache inet misc audio sdcard_r sdcard_rw log vpn system
+    onrestart restart cpboot-daemon
 
 service ril-daemon1 /system/bin/rild -c 2
     class main
@@ -19,3 +20,23 @@ service ril-daemon1 /system/bin/rild -c 2
     user root
     group radio cache inet misc audio sdcard_r sdcard_rw log system vpn
     disabled
+    onrestart restart cpboot-daemon
+
+# APN HACK
+on post-fs-data
+    # Remove symlinks to avoid issues with migrate after nandroid restores
+    # Will be recreated at end of boot
+    rmdir /data/data/com.android.providers.telephony/databases
+    rmdir /data/data/com.android.providers.telephony/shared_prefs
+    rm /data/data/com.android.providers.telephony/databases
+    rm /data/data/com.android.providers.telephony/shared_prefs
+
+    # Symlink directories to access telephony.db and preferred-apn.xml required by libsec-ril
+    symlink /data/user_de/0/com.android.providers.telephony/databases /data/data/com.android.providers.telephony/databases
+    symlink /data/user_de/0/com.android.providers.telephony/shared_prefs /data/data/com.android.providers.telephony/shared_prefs
+    restorecon /data/data/com.android.providers.telephony/databases
+    restorecon /data/data/com.android.providers.telephony/shared_prefs
+
+    # restart RIL
+    restart ril-daemon
+    restart ril-daemon1
