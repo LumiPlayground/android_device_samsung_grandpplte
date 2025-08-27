@@ -274,9 +274,6 @@ lib/hw/keystore.mt6737t.so
 lib/libkeymaster_helper_bf.so
 lib/libkeymaster_mdfpp_bf.so
 
-# Lights
-lib/hw/lights.mt6737t.so
-
 # NVRAM
 bin/nvram_agent_binder
 bin/nvram_daemon
