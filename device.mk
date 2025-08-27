@@ -35,6 +35,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	Snap
 
+# Dalvik
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.heapstartsize=12m \
+    dalvik.vm.heapgrowthlimit=128m \
+    dalvik.vm.heapsize=256m \
+    dalvik.vm.heaptargetutilization=0.75 \
+    dalvik.vm.heapminfree=4m
+
 # Display
 PRODUCT_PACKAGES += \
     libion
