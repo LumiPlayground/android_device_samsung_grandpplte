@@ -96,6 +96,7 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libc_shim \
     liblog_shim
 
 # Wi-Fi
