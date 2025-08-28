@@ -97,7 +97,6 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.recovery.mt6735.rc \
     init.rilchip.rc \
-    init.rilcommon.rc \
     init.wifi.rc \
     ueventd.mt6735.rc
 

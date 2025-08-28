@@ -3,7 +3,7 @@
 # IMPORTANT: Do not create world writable files or directories.
 # This is a common source of Android security bugs.
 #
-on boot
+
 service ril-daemon /system/bin/rild
     class main
     socket rild stream 660 root radio
@@ -11,7 +11,6 @@ service ril-daemon /system/bin/rild
     socket rild-cas stream 660  casdrm mmb
     user root
     group radio cache inet misc audio sdcard_r sdcard_rw log vpn system
-    onrestart restart cpboot-daemon
 
 service ril-daemon1 /system/bin/rild -c 2
     class main
@@ -20,13 +19,3 @@ service ril-daemon1 /system/bin/rild -c 2
     user root
     group radio cache inet misc audio sdcard_r sdcard_rw log system vpn
     disabled
-    onrestart restart cpboot-daemon
-
-on property:persist.sys.cpboot=disable
-    stop ril-daemon
-    stop cpboot-daemon
-
-service SMD-daemon /system/bin/smdexe
-    class main
-    user root
-    group system radio inet net_raw
