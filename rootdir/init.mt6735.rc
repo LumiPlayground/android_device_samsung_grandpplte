@@ -1100,20 +1100,20 @@ service NvRAMAgent /system/bin/nvram_agent_binder
     user system
     group system
 
-service thermal_manager /system/bin/thermal_manager
-    class main
-    user root
-    oneshot
+#service thermal_manager /system/bin/thermal_manager
+#    class main
+#    user root
+#    oneshot
 
-service thermal /system/bin/thermal
-    class main
-    user system
-    group system
+#service thermal /system/bin/thermal
+#    class main
+#    user system
+#    group system
 
-service thermald /system/bin/thermald
-    class main
-    user system
-    group system
+#service thermald /system/bin/thermald
+#    class main
+#    user system
+#    group system
 
 service fuelgauged /system/bin/fuelgauged
     class main
