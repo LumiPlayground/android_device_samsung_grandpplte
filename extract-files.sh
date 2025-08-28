@@ -107,6 +107,15 @@ do
     "$PATCHELF_0_18" --add-needed "liblog_shim.so" "$BLOB_ROOT/$blob"
 done
 
+# SSL_*
+BLOBS_LIST="
+bin/mtk_agpsd
+"
+for blob in $BLOBS_LIST
+do
+    "$PATCHELF_0_18" --add-needed "libssl_shim.so" "$BLOB_ROOT/$blob"
+done
+
 # GraphicBuffer
 # libcam.camnode, libcam.client depends on libcam_utils
 BLOBS_LIST="

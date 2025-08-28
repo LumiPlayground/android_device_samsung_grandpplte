@@ -98,6 +98,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libc_shim \
     liblog_shim \
+    libssl_shim \
     libui_shim
 
 # Wi-Fi
