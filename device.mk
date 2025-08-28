@@ -94,6 +94,10 @@ PRODUCT_PACKAGES += \
     init.wifi.rc \
     ueventd.mt6735.rc
 
+# Shims
+PRODUCT_PACKAGES += \
+    liblog_shim
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     libwpa_client \
