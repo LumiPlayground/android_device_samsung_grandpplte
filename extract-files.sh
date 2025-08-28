@@ -107,4 +107,17 @@ do
     "$PATCHELF_0_18" --add-needed "liblog_shim.so" "$BLOB_ROOT/$blob"
 done
 
+# GraphicBuffer
+# libcam.camnode, libcam.client depends on libcam_utils
+BLOBS_LIST="
+lib/libMtkOmxVenc.so
+lib/libcam_utils.so
+lib/libmtk_mmutils.so
+lib/libsecimaging.so
+"
+for blob in $BLOBS_LIST
+do
+    "$PATCHELF_0_18" --add-needed "libui_shim.so" "$BLOB_ROOT/$blob"
+done
+
 "$MY_DIR"/setup-makefiles.sh
