@@ -45,7 +45,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    libion
+    libion \
+    libgui_ext \
+    libui_ext
 
 # FM
 PRODUCT_PACKAGES += \
