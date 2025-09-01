@@ -846,11 +846,6 @@ wifi_error wifi_get_supported_feature_set(wifi_interface_handle handle, feature_
     return (wifi_error)command.requestResponse();
 #else
     feature_set set = 0;
-    char prop_buf[PROPERTY_VALUE_MAX];
-
-    property_get("ro.wlan.mtk.wifi.5g", prop_buf, NULL);
-    if (!strcmp(prop_buf, "1"))
-        set |= WIFI_FEATURE_INFRA_5G;
 
     set |= WIFI_FEATURE_P2P;
     set |= WIFI_FEATURE_SOFT_AP;
