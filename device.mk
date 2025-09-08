@@ -130,6 +130,7 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libcamera_client_shim \
     libc_shim \
     liblog_shim \
     libssl_shim \
