@@ -1143,13 +1143,8 @@ on property:init.svc.tz_service=stopped
 # LPM
 on property:ro.bootmode=charger
     mount ext4 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/system /system support_scfs wait ro
-
-on property:ro.bootmode=charger
     wait /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/EFS
-    check_fs /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/EFS ext4
     mount ext4 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/EFS /efs nosuid nodev noatime noauto_da_alloc,discard,journal_async_commit
-
-on property:ro.bootmode=charger
     class_start sec-charger
 
 service lpm /system/bin/lpm
