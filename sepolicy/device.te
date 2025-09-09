@@ -1,0 +1,5 @@
+# /dev/umts_boot*
+type mif_device, dev_type;
+
+type Vcodec_device, dev_type;
+type wmtWifi_device, dev_type;

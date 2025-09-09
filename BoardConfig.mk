@@ -97,6 +97,9 @@ BOARD_RIL_CLASS := ../../../$(DEVICE_PATH)/ril
 # Seccomp
 BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 
+# Sepolicy
+BOARD_SEPOLICY_DIRS := $(DEVICE_PATH)/sepolicy
+
 # Wifi
 BOARD_WLAN_DEVICE := MediaTek
 WPA_SUPPLICANT_VERSION := VER_0_8_X

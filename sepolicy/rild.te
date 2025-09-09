@@ -1,0 +1,5 @@
+# Allow rild to change perms
+allow rild self:capability { chown };
+
+# /dev/umts_boot0, /dev/umts_ipc0
+allow rild mif_device:chr_file rw_file_perms;
