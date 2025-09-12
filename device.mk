@@ -133,6 +133,7 @@ PRODUCT_PACKAGES += \
     libcamera_client_shim \
     libc_shim \
     liblog_shim \
+    libnetutils_shim \
     libssl_shim \
     libui_shim
 
