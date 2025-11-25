@@ -72,6 +72,9 @@ TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_CONFIG := mt6737t-grandpplte_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/grandpplte
 
+# Manifest
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+
 # Media
 TARGET_OMX_LEGACY_RESCALING := true
 BOARD_CANT_REALLOCATE_OMX_BUFFERS := true
