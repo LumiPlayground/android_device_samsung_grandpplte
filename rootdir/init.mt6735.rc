@@ -1030,8 +1030,9 @@ on property:ro.bootmode=charger
     mount ext4 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/system /system support_scfs wait ro
     wait /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/EFS
     mount ext4 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/EFS /efs nosuid nodev noatime noauto_da_alloc,discard,journal_async_commit
-    class_start sec-charger
+    class_start charger
 
-service lpm /system/bin/lpm
+service charger /sbin/healthd -c
     class sec-charger
     critical
+    seclabel u:r:healthd:s0
