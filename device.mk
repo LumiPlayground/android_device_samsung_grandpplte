@@ -41,6 +41,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	Snap
 
+# Charger
+# Use cm images if available, aosp ones otherwise
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    cm_charger_res_images
+
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=12m \
