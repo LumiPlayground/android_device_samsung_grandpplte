@@ -36,7 +36,7 @@ on fs
 
 service ccci_fsd /system/bin/ccci_fsd 0
     user system
-    group radio system net_bt_stack
+    group radio system bluetooth
     class core
     oneshot
 
