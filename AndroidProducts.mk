@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage.mk
+    $(LOCAL_DIR)/lineage_grandpplte.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_grandpplte-user \
+    lineage_grandpplte-userdebug \
+    lineage_grandpplte-eng
