@@ -16,7 +16,6 @@ rild.libpath=/system/lib/libsec-ril.so
 rild.libpath2=/system/lib/libsec-ril-dsds.so
 rild.libargs=-d /dev/ttyC0
 persist.radio.sib16_support=0
-ro.telephony.ril_class=grandpplteRIL
 ro.telephony.default_network=9
 persist.radio.multisim.config=dsds
 ro.multisim.simslotcount=2
