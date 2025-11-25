@@ -36,9 +36,8 @@ BOARD_CHARGER_SHOW_PERCENTAGE := true
 BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
 CHARGING_ENABLED_PATH := /sys/class/power_supply/battery/batt_lp_charging
 
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/cmhw
+# LineageHW
+BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw
 
 # Display
 USE_OPENGL_RENDERER := true
