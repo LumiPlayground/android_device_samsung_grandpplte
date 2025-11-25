@@ -58,13 +58,13 @@ BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
 echo "Fixing proprietary blobs"
 
-# ICU 55 > ICU 56
+# ICU 55 > ICU 58
 BLOBS_LIST="
 lib/libaudio_param_parser.so
 "
 for blob in $BLOBS_LIST
 do
-    sed -i 's/\([Uu][Cc][Nn][Vv]_[A-Za-z_]*\)_55/\1_56/g' "$BLOB_ROOT/$blob"
+    sed -i 's/\([Uu][Cc][Nn][Vv]_[A-Za-z_]*\)_55/\1_58/g' "$BLOB_ROOT/$blob"
 done
 
 # __pthread_gettid
