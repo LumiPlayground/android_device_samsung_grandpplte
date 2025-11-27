@@ -1,1 +1,0 @@
-allow mediacodec Vcodec_device:chr_file { read write ioctl open };

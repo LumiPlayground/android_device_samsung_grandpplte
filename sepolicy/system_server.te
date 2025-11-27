@@ -1,6 +1,0 @@
-allow system_server wmtWifi_device:chr_file w_file_perms;
-
-# Allow system server to open/read/write ioctl
-allow system_server graphics_device:chr_file { open read write ioctl };
-
-allow system_server guiext-server_service:service_manager find;
