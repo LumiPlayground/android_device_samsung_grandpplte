@@ -146,4 +146,12 @@ do
     "$PATCHELF_0_18" --add-needed "libui_shim.so" "$BLOB_ROOT/$blob"
 done
 
+BLOBS_LIST="
+lib/hw/gralloc.mt6737t.so
+"
+for blob in $BLOBS_LIST
+do
+    "$PATCHELF_0_18" --add-needed "libutilscallstack.so" "$BLOB_ROOT/$blob"
+done
+
 "$MY_DIR"/setup-makefiles.sh
