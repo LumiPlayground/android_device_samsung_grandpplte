@@ -115,7 +115,7 @@ private:
 
     uint32_t mId;
     uint32_t mIsHwcNeeded;
-    uint32_t mGpuUsedBufNum;
+    //uint32_t mGpuUsedBufNum;
     int32_t  mProducerPid;
     bool mIsDisconnected[GUI_EXT_USAGE_MAX];
 
