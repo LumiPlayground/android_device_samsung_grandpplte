@@ -464,7 +464,7 @@ GuiExtPoolItem::GuiExtPoolItem(const sp<IBinder>& token,
 #endif
                 , mId(poolId)
                 , mIsHwcNeeded(isHwcNeeded)
-                , mGpuUsedBufNum(MAX_GLES_DEQUEUED_NUM)
+                //, mGpuUsedBufNum(MAX_GLES_DEQUEUED_NUM)
                 , mProducerPid(-1)
                 , mProducerToken(token)
                 , mProducerDeathObserver(observer)
@@ -827,7 +827,6 @@ status_t GuiExtPoolItem::disconnect(uint32_t usage, uint32_t /*type*/)
 
 void GuiExtPoolItem::dump(String8& result) const
 {
-    int w, h;
     result.appendFormat("    "
                         "this=%p mId=%d, mIsHwcNeeded=%d, mProducerPid=%d, mProducerToken=%p\n",
                         this, mId, mIsHwcNeeded, mProducerPid, mProducerToken.get());
