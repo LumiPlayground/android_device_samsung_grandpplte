@@ -579,7 +579,7 @@ int GraphicBufferUtil::getRealFormat(buffer_handle_t handle, PixelFormat* format
                 *format = HAL_PIXEL_FORMAT_NV12_BLK_FCM;
                 break;
             default:
-                ALOGE("    CANNOT get real format: (format=0x%x, fillFormat=0x%x)",
+                ALOGE("    CANNOT get real format: (format=0x%x, fillFormat=0x%llx)",
                       *format,
                       sf_info.status & GRALLOC_EXTRA_MASK_CM);
                 return GRALLOC_EXTRA_ERROR;
