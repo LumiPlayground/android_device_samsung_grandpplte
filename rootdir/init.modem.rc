@@ -52,6 +52,12 @@ service ccci_rpcd /system/bin/ccci_rpcd 0
     class core
     oneshot
 
+service emdlogger1 /system/bin/toybox sleep 2147483647
+    class core
+    user root
+    group root
+    disabled
+
 #
 #
 #  Modem related services (End)
