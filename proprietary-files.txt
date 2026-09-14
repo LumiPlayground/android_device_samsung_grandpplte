@@ -329,17 +329,17 @@ lib/libvp8dec_sa.ca7.so
 lib/libvp8enc_sa.ca7.so
 lib/libvp9dec_sa.ca7.so
 
-# RIL
-bin/rild
-etc/plmn_delta.bin
-etc/plmn_se13.bin
-lib/libfloatingfeature.so
-lib/libril.so
-lib/librilutils.so
-lib/libsec-ril-dsds.so
-lib/libsec-ril.so
-lib/libsecnativefeature.so
-lib/libsecril-client.so
+# RIL - C710FDXU2ARJ1
+bin/rild|2836bb901c214362c989397cffccb7c3
+etc/plmn_delta.bin|a7f14f144ae27afdda8f4f98472b23ad
+etc/plmn_se13.bin|127ec07ed65eb8edb15b23048fa62188
+lib/libfloatingfeature.so|bd9d9d77f82c9eb755c936607fe8b97b
+lib/libril.so|fe5abeac99190b41688fb92c15993958
+lib/librilutils.so|67d1a5876d510cb9e64b4576389ef055
+lib/libsec-ril-dsds.so|b316a04a25a6fb87061e9398a754e832
+lib/libsec-ril.so|56d175fcf72e467e6f9a3cd4c060210b
+lib/libsecnativefeature.so|26d8a5a0baac74080aabf8233885e801
+lib/libsecril-client.so|9e32592346c54ba82fa8d98d303a1085
 
 # Sensors
 lib/hw/sensors.mt6737t.so
