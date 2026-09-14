@@ -238,10 +238,8 @@ bin/mtk_agpsd
 bin/wifi2agps
 etc/agps_profiles_conf2.xml
 etc/gps.conf
-etc/strongswan.conf
 lib/hw/gps.default.so
 lib/libmnl.so
-lib/libstrongswan.so
 xbin/mnld
 
 # Graphics
